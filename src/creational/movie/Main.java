@@ -4,6 +4,7 @@ import creational.movie.abctractFactory.HorrorMovieAbstractFactory;
 import creational.movie.abctractFactory.MovieAbstractFactory;
 import creational.movie.abctractFactory.RomanticMovieAbstractFactory;
 import creational.movie.builder.MovieBuilder;
+import creational.movie.clonable.CloneMovie;
 import creational.movie.factoryMethod.HorrorMovieCreator;
 import creational.movie.factoryMethod.Movie;
 import creational.movie.factoryMethod.MovieCreator;
@@ -34,6 +35,11 @@ public class Main{
         customMovie1.play();
         customMovie2.play();
 
+
+        CloneMovie clone1= new CloneMovie("Fighter club");
+        CloneMovie clone2= clone1.clon();
+        clone1.play();
+        clone2.play();
 
 
 
