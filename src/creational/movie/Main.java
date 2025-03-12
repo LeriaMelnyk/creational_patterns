@@ -12,6 +12,7 @@ import creational.movie.factoryMethod.RomanticMovieCreator;
 
 
 
+
 public class Main{
     public static void main(String[] args){
         SingletonMovie instanse1= SingletonMovie.getInstance();
@@ -37,7 +38,7 @@ public class Main{
 
 
         CloneMovie clone1= new CloneMovie("Fighter club");
-        CloneMovie clone2= clone1.clon();
+        CloneMovie clone2=  new CloneMovie(clone1);
         clone1.play();
         clone2.play();
 
